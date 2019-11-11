@@ -39,7 +39,7 @@ if __name__ == "__main__":
     uri = "urn:opcua:python:server"
     server.set_application_uri(uri)
     
-    server.load_certificate("certificate.der")
+    server.load_certificate("certificate.pem")
     server.load_private_key("key.pem")
     server.set_security_policy([
                                     # ua.SecurityPolicyType.NoSecurity,
