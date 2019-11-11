@@ -19,8 +19,8 @@ def myMethod(parent, rfid):
     Out1 = rfid
     Out2 = 12345
     return  (
-                ua.Variant(Out1, ua.VariantType.UInt64),
-                ua.Variant(Out2, ua.VariantType.UInt64)
+                ua.Variant(Out1, ua.VariantType.Int64),
+                ua.Variant(Out2, ua.VariantType.Int64)
             )
 
 if __name__ == "__main__":
@@ -36,8 +36,11 @@ if __name__ == "__main__":
     server.set_server_name(servername)
     address_space = server.register_namespace(servername + "/namespace")
     
-    server.load_certificate("certificate-example.der")
-    server.load_private_key("private-key-example.pem")
+    uri = "urn:opcua:python:server"
+    server.set_application_uri(uri)
+    
+    server.load_certificate("certificate.der")
+    server.load_private_key("key.pem")
     server.set_security_policy([
                                     # ua.SecurityPolicyType.NoSecurity,
                                     # ua.SecurityPolicyType.Basic128Rsa15_Sign,
