@@ -3,8 +3,10 @@ based on: https://github.com/FreeOpcUa/python-opcua
 
 ## Description
 This is a basic example Server with Sign&Encrypt and Authentication.  
-Tested with an Siemens S7-1500 OPC UA Client  
-in addition to: https://github.com/AndreasHeine/PythonOpcUaServer-for-Simatic-S7-1500-OpcUaClient  
+Tested with an Siemens S7-1500 OPC UA Client and my SecurePythonOpcUaClient    
+in addition to:  
+https://github.com/AndreasHeine/SecurePythonOpcUaClient  
+https://github.com/AndreasHeine/PythonOpcUaServer-for-Simatic-S7-1500-OpcUaClient  
 
 ## Generate your own Certificate
 
