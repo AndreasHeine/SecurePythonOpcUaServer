@@ -1,5 +1,7 @@
 # SecurePythonOpcUaServer
-based on: https://github.com/FreeOpcUa/python-opcua
+based on: https://github.com/FreeOpcUa/python-opcua  
+Python: 3.7.3 32bit  
+OPC UA Library: opcua==0.98.7  
 
 ## Description
 This is a basic example Server with Sign&Encrypt and Authentication.  
