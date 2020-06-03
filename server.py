@@ -34,7 +34,7 @@ if __name__ == "__main__":
 
     servername = "Python-OPC-UA"
     server.set_server_name(servername)
-    address_space = server.register_namespace(servername + "/namespace")
+    address_space = server.register_namespace("http://andreas-heine.net/UA")
     
     uri = "urn:opcua:python:server"
     server.set_application_uri(uri)
